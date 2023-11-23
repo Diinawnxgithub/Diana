@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang ="pl">
+<head>
+    <title>formularz rejestracyjny</title>
+	<meta charset="UTF-9">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="kontener">
+	    <h2>Formularz rejestracyjny</h2>		<form action="" method="post" enctype="">
+			Nazwisko:<br>
+			<input type="text" name="nazw">
+			
+			Imię:<br>
+			<input type="text" name="imie">
+			
+			Narodowość:<br>
+			<input type="text" name="narod">
+			
+Wybierz język:
+<select name="jezyki" size="5" multiple>
+	<optgroup label="Języki słowiańskie">
+		<option value="jezyk_polski">Język polski</option>
+		<option value="jezyk_ukrainski">Język ukraiński</option>
+		<option value="jezyk_bialoruski">Język białoruski</option>
+	</optgroup>
+	<optgroup label="Języki germańskie">
+		<option value="jezyk_angielski">Język angielski</option>
+		<option value="jezyk_niemiecki">Język niemiecki</option>
+		<option value="jezyk_dunski">Język duński</option>
+	</optgroup>
+	<optgroup label="Języki romańskie">
+		<option value="jezyk_francuski">Język francuski</option>
+		<option value="jezyk_wloski">Język włoski</option>
+		<option value="jezyk_wloski">Język włoski</option>
+	</optgroup>
+</select>
+
+<textarea name="uwagi" 
+placeholder="Wpisz uwagi do zamówienia:"></textarea>
+
+
+<input type="submit" name="wyslij" value="Wyślij formularz">&nbsp;&nbsp; 
+<input type="reset" name="wyczysc" value="Wyczyść formularz">
+
+			
+		</form>
+		
+		
+		<form action="" method="post" enctype="">
+		    <p>Nazwisko:
+			<input type="text" name="nazwa"></p>
+			
+			<p>Imię:
+			<input type="text" name="imię"></p>
+			
+			<p>Podaj e-mail:
+			<input type="e-mail" name="adres_e-mail"></p>
+			
+			<p>Podaj hasło:
+			<input type="password" name="haslo"></p>
+			
+			<p>Podaj date urodzenia:
+			<input type="date" name="data-urodz"></p>
+			
+			<p>Podaj godzinę:
+			<input type="time" name="czas"></p>
+			
+			<p>Podaj date i godzine:
+			<input type="datetime-lockal" name="data_czas"></p>
+			
+			<p>Wybierz miesiąc:
+			<input type="month" name="misiac"></p>
+			
+			<p>Wybierz tydzień:
+			<input type="week" name="tydzień"></p>
+			
+			<p>Wybierz pleć:
+			<input type="radio" name="pleć">Kobieta
+			<input type="radio" name="pleć">Męzczyzna
+			<input type="radio" name="pleć">Inna
+			<input type="radio" name="pleć">Nie podaje
+			</p>
+			
+			<p>Wybierz ilość:
+			<input type="number" name="ilosc" min="10" max="100" step="5"></p>
+			
+			<p>Wybierz kolor z podanej palety:
+			<input type="color" name="kolor" value='ff000'></p>
+			
+			<p>podaj kod pocztowy:
+			<input type="text" name="kod_poczt" pattern="[0-9]{2}-[0-9]{3}"></p>
+			
+		</form>
+	</div>
+</body>
+</html> 
